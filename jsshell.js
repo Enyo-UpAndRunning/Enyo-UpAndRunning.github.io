@@ -13,7 +13,7 @@ _out,
 tooManyMatches = null,
 lastError = null;
 
-
+/*
 function _JS_version_check(start, end) { // get latest JS version supported & redefine input eval function in it
   var scripts = [];
   if ( typeof start == "undefined" ) var start = _JS_version_check.start;
@@ -36,6 +36,7 @@ _JS_version_check.end = 20; // highest version to test for (end:Float*10)
 _JS_version_check.code = document.getElementById("inputEval").innerHTML;
 
 _JS_version_check();
+*/
 
 function refocus() {
   _in.blur(); // Needed for Mozilla to scroll correctly.
