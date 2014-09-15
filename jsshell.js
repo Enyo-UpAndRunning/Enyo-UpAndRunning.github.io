@@ -13,6 +13,10 @@ _out,
 tooManyMatches = null,
 lastError = null;
 
+function line1EvalShellInput() {
+	_win.eval("try{ Shell.printAnswer(eval('with(Shell._scope) with(Shell.shellCommands) { eval(Shell.question) }')); } catch(er) { Shell.printError(er); }; setTimeout(Shell.refocus, 0);")
+}
+
 /*
 function _JS_version_check(start, end) { // get latest JS version supported & redefine input eval function in it
   var scripts = [];
