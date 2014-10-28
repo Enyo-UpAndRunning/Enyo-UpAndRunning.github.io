@@ -854,7 +854,7 @@ exec.onkeydown = function (event) {
   } else if ((which == 13 || which == 10) && event.shiftKey == false) { // enter (what about the other one)
     removeSuggestion();
     if (event.shiftKey == true || event.metaKey || event.ctrlKey || !wide) {
-      var command = exec.textContent || exec.value;
+      var command = trim(exec.textContent) || exec.value;
       if (command.length) post(command);
       return false;
     }
